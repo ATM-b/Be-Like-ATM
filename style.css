@@ -331,8 +331,36 @@ margin: 10px 10px;
   list-style: none;
 }
 
+.nav_bar {
+  flex-wrap: wrap;
+  /* padding: 20px; */
+}
+
+/* Hamburger initially hidden */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+
     
 @media (max-width: 768px) {
+
+/* #header{
+  margin-top: 0%;
+
+} */
+
+.atmlogo img{
+  /* margin-top: 1px; */
+  margin-left: 10px;
+  /* height: 90px;
+  width: 90px;
+  border-radius: 50%; */
+}
+
   .hero {
   min-height: 100vh;
   background-image: url("atm3.jpg");
@@ -340,13 +368,14 @@ margin: 10px 10px;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  color: white;
+  color: rgb(255, 255, 255);
   flex-direction: column;
 }
 
@@ -370,8 +399,8 @@ margin: 10px 10px;
 .hero h1 {
   font-size: clamp(1.8rem, 6vw, 3rem);  /* Responsive font size */
   margin-bottom: 1rem;
-  -webkit-text-stroke: 0.5px gold;
-  color: white;
+  -webkit-text-stroke: 0.4px gold;
+  color: rgb(10, 1, 1);
 }
 
 .hero h3 {
@@ -395,5 +424,134 @@ margin: 10px 10px;
   background-color: black;
   color: white;
 }
+/* @media screen and (max-width: 768px) { */
+  .nav_bar {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  }
 
+  .hamburger {
+    display: block;
+    /* align-self: flex-end; */
+  }
+
+  .Menu {
+    display: none; /* 🛑 HIDE THE MENU */
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .Menu li {
+    text-align: left;
+  }
+
+  #temitope {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .temitope12 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    text-align: justify; /* optional: looks nicer on narrow screens */
+  }
+
+  .section-spacing {
+    padding: 60px 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .feature-box p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+
+  .cta {
+    font-size: 0.95rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex; */
+    justify-content: space-between;
+    gap: 50px;
+    text-transform: capitalize;
+  }
+
+  .btn-full,
+  .btn-light {
+    margin: 10px auto;
+    width: 120px;
+    gap: 50px;
+    margin: 0%;
+  }
+
+
+
+
+  .ATM50 {
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 20px;
+  }
+
+  .ATM51 {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    font-size: 0.95rem;
+    border-radius: 5px;
+  }
+
+  .ATM52 {
+    height: 35px;
+    width: 35px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .ATM52 i {
+    font-size: 1.1rem;
+  }
+
+  .ATM51 h5 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .ATM51 p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  #ATM112 {
+    font-size: 0.9rem;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+
+  #ATM112 li {
+    margin-bottom: 8px;
+  }
 }
+
+
+
+
+
