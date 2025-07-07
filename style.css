@@ -24,6 +24,10 @@ background-color: aliceblue;
 
 #header{
   background-color: brown;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
 }
 
 
