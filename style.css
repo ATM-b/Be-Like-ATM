@@ -331,9 +331,6 @@ box-shadow: 2px 4px 5px rgba(17, 14, 14);
 margin: 10px 10px;
 }
 
-#ATM112{
-  list-style: none;
-}
 
 .nav_bar {
   flex-wrap: wrap;
@@ -347,6 +344,25 @@ margin: 10px 10px;
   color: white;
   cursor: pointer;
 }
+
+
+.leadbox{
+  display: flex;
+    gap: 20px;
+}
+
+
+.teamlead{
+  border: 1px solid black;
+  width: 400px;
+  text-align: center;
+  padding-left: 15px;
+  border-radius: 10%;
+  margin-left: 30px;
+  box-shadow: 2px 4px 5px rgba(17, 14, 14);
+
+}
+
 
 
     
@@ -553,7 +569,65 @@ margin: 10px 10px;
   #ATM112 li {
     margin-bottom: 8px;
   }
+
+/* 
+
+.leadbox {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
+
+.teamlead {
+  border: 1px solid black;
+  width: 400px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10%;
+  margin: 10px;
+  box-shadow: 2px 4px 5px rgba(17, 14, 14, 0.3);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.teamlead:hover {
+  transform: scale(1.02);
+}
+
+.teamlead img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+} */
+
+/* ✅ RESPONSIVENESS FOR PHONES */
+/* @media (max-width: 768px) { */
+  .leadbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamlead {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .teamlead img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team1 h3 {
+    text-align: center;
+  }
+}
+
+
 
 
 
