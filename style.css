@@ -5,13 +5,18 @@ box-sizing: border-box;
 } 
 
 body{
-  background-color: burlywood;
+  background-color: rgb(66, 62, 57);
 }
 
 .temitope13{
 background-color: aliceblue;
 }
 
+.Arrivals{
+  color: #ffffffea;
+  text-align: center;
+  text-decoration: underline;
+}
 
 
 
@@ -23,7 +28,7 @@ background-color: aliceblue;
 
 
 #header{
-  background-color: brown;
+  background-color: #0F172A;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -70,11 +75,6 @@ a{
 
 
 
-
-
-
-
-
 h3 {
     text-align: center;
 }
@@ -96,7 +96,7 @@ h3 {
 }
 
 footer{
-    background-color: brown;
+    background-color: #0F172A;
     text-align: center;
 }
 
@@ -106,15 +106,74 @@ h2 {
 
 .ATM1 {
   display: flex;
-  gap: 20px; /* space between each image+text block */
+  gap: 25px; /* space between each image+text block */
   justify-content: center;
   flex-wrap: wrap; /* allows wrapping on smaller screens */
+  color: #ffffffcb;
+  /* text-transform: capitalize; */
 }
+
+
+.product-desc{
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.btn-button1{
+  color: #fff;
+  border: white solid 1px;
+   padding-left: 74px;
+   padding-right: 74px;
+   padding-bottom: 7px;
+   padding-top: 7px;
+   border-radius: 6%;
+}
+
+
+
+.btn-product{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.863);
+  border: black solid 1px;
+   padding-left: 70px;
+   padding-right: 70px;
+   padding-bottom: 7px;
+   padding-top: 7px;
+   border-radius: 6%;
+  transition: 0.3s;
+  margin: auto;
+  color: black;
+
+}
+
+
+.btn-product:hover {
+  background-color: black;
+  color: white;
+}
+
+
 
 .ATM1 .item {
   text-align: center;
+  /* border: black solid 1px; */
+  background-color: #333333c7;
 }
 
+
+ /* .ATM1 .yellow{
+  border: solid black 1px;
+ } */
+
+ .ATM1 .div-p{
+  display: flex;
+ }
+
+
+.itembox1{
+  display: flex;
+  gap: 25px;
+}
 
 
 .ATM2 {
@@ -263,13 +322,13 @@ h2 {
 }
 
 .btn-full{
-    background-color: brown;
+    background-color: rgba(0, 0, 139, 0.705);
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-light{
-    border: 1px solid brown;
+    border: 1px solid rgba(0, 0, 139, 0.705);
     color: #333;
 }
 
@@ -282,7 +341,8 @@ h2 {
 }
 
 .ATM52{
-  /* width: 40px;
+  /* wi
+  dth: 40px;
   height: 40px;
   border: 2px solid brown;
   border-radius: 50%;
@@ -293,7 +353,7 @@ h2 {
   text-align: center; */
   text-align: center;
   font-size: larger;
-  color: brown;
+  color: #94A3B8;
 } 
 
 
@@ -302,7 +362,7 @@ h2 {
   width: 40px;
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.671);
-  border: 1px solid brown;
+  border: 1px solid  #94A3B8 ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,7 +371,7 @@ margin: auto;
 
 .ATM52 i{
   font-size: 1.37rem;
-  color: brown;
+  color:  #94A3B8;
 }
 
 
@@ -336,6 +396,82 @@ margin: 10px 10px;
   flex-wrap: wrap;
   /* padding: 20px; */
 }
+
+.order-btn{
+  color: black;
+  border: white solid 1px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 9%;
+  transition: 0.3s;
+}
+
+.order-btn:hover{
+  color: white;
+  background-color: #000000;
+}
+
+.social-icons1 i{
+  color: #000000 !important;
+  font-size: large;
+  
+}
+
+
+
+.footer {
+  width: 100%;
+  background-color: #0F172A;
+  color: #f5f5f5;
+  padding: 60px 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  margin-top: 80px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  color: #f5b841;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom:  j20px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.footer-socials a img {
+  transition: transform 0.2s ease;
+}
+
+.footer-socials a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
 
 /* Hamburger initially hidden */
 .hamburger {
@@ -362,7 +498,7 @@ margin: 10px 10px;
   box-shadow: 2px 4px 5px rgba(17, 14, 14);
 
 }
-
+ 
 
 
     
@@ -625,11 +761,41 @@ margin: 10px 10px;
   .team1 h3 {
     text-align: center;
   }
+
+  .ATM1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .product-desc {
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .btn-button1
+  .btn-product {
+    width: 90%;
+    max-width: 400px;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    padding-right: 30px;
+
+  }
+
+  .ATM1 .div-p,
+  .itembox1 {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .ATM1 .item {
+    width: 100%;
+    max-width: 450px;
+  }
 }
-
-
-
-
-
-
-
