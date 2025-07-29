@@ -24,6 +24,8 @@ background-color: aliceblue;
   height: 80px;
   width: 80px;
   border-radius: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 
@@ -199,7 +201,7 @@ h2 {
   flex-wrap: wrap; /* makes layout responsive */
 }
 
-.ATM3 .item3 {
+.item3 {
   text-align: center;
 }
 
@@ -336,7 +338,7 @@ h2 {
   display: flex;
   gap: 20px;
   text-align: justify;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 10px;
 }
 
@@ -471,6 +473,133 @@ margin: 10px 10px;
   color: #888;
 }
 
+/* Reset & base */
+
+
+
+/* Layout */
+.contact-section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* Info Section */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.info-item i {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.info-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.info-item a:hover {
+  color: #000;
+}
+
+/* Map */
+.map-container {
+  margin-top: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
 
 
 /* Hamburger initially hidden */
@@ -593,7 +722,14 @@ margin: 10px 10px;
 
   .hamburger {
     display: block;
+    font-size: 2.4rem;
     /* align-self: flex-end; */
+  }
+
+  
+
+ .Menu.active {
+    display: flex;
   }
 
   .Menu {
@@ -761,7 +897,7 @@ margin: 10px 10px;
   .team1 h3 {
     text-align: center;
   }
-
+/* 
   .ATM1 {
     flex-direction: column;
     align-items: center;
@@ -794,8 +930,149 @@ margin: 10px 10px;
     align-items: center;
   }
 
-  .ATM1 .item {
+  /* .ATM1 .item {
     width: 100%;
     max-width: 450px;
+  } */
+
+ .ATM1{
+  padding-left: 23px;
+  
+ }
+
+/* 📱 Mobile responsiveness */
+/* @media (max-width: 768px) { */
+  .itembox1 {
+    flex-direction: column;
+    align-items: center;
   }
+
+  /* .itembox, */
+  /* .model1 {
+    width: 90%;
+    margin-bottom: 30px;
+  } */
+
+
+
+
+  .btn-button1,
+  .btn-product {
+    /* padding: 10px 30px; */
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* .ATM1{
+  display : block;
+  align-items: center;
+  
+  } */
+
+.item img{
+  height: 250px;
+  width: 250px;
+
 }
+
+
+.pstyle{
+  text-align: center;
+}
+
+  .product-desc {
+    margin-left: 10px;
+    font-size: 0.95rem;
+  }
+
+  .Arrivals {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+
+  .item3 img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  #atmform {
+    padding: 20px;
+  }
+
+  input {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    color: black;
+    margin: auto;
+    border: solid 1px white;
+  }
+
+ 
+  .complaint{
+    color: white;
+    background-color: #0F172A;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+
+  }
+
+  .buttonbox{
+    border-radius: 3px;
+    margin-top: -9px;
+    
+  }
+  .teamdiv{
+    text-align: center !important;
+    
+  }
+
+  .teamp{
+    text-align: center;
+}
+
+#atmform{
+  text-align: left;
+  background-color: #0F172A;
+}
+
+.btn3{
+ background-color: black;
+ padding-right: 40px;
+ padding-left:40px ;
+ margin-left: 120px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ color: white;
+  
+}
+
+}
+
+
